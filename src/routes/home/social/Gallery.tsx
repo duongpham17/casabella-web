@@ -2,6 +2,7 @@ import styles from './Gallery.module.scss';
 import React from 'react';
 import Swiper from '@components/swiper/index';
 import useWindowSize from '@hooks/useWindow';
+import Image from 'next/image';
 
 const images = [
     {
@@ -35,7 +36,14 @@ const Gallery = () => {
             <Swiper data={images} slidersPerView={width >= 1200 ? 5 : width >= 1000 ? 4 : width >= 800 ? 3 : width >= 600 ? 2 : 1}>
                 {(el) => 
                     <div key={el.name}>
-                        <img src={el.src} alt="cryptos" />
+                        <Image 
+                            src={el.src} 
+                            alt="cryptos"
+                            objectFit="cover"
+                            width={100}
+                            height={100}
+                            layout='responsive'
+                        />
                     </div>
                 }
             </Swiper>

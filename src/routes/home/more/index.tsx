@@ -1,6 +1,8 @@
 import styles from './More.module.scss';
 import React from 'react';
 
+import Image from 'next/image';
+
 import Text from '@components/text/Style1';
 import Button from '@components/buttons/Style1';
 
@@ -24,7 +26,14 @@ const More = () => {
         </div>
 
         <div className={styles.right}>
-            <img src="image1.webp" alt="bitcoin"/>
+            <Image 
+                src="/image1.webp" 
+                alt="bitcoin" 
+                objectFit="cover"
+                width={100}
+                height={100}
+                layout='responsive'
+            />
         </div>
 
     </div>
