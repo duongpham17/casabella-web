@@ -1,4 +1,4 @@
-import styles from './style1.module.scss';
+import styles from './Style1.module.scss';
 import React from 'react';
 
 interface Props {

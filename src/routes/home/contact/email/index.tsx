@@ -59,7 +59,7 @@ const Index = () => {
 
             <Button value="send" fill/>
 
-            {!sent ? <Text value="Email has been sent, thank you!" lineHeight="4rem"/> : ""}
+            {sent ? <Text value="Email has been sent, thank you!" lineHeight="4rem"/> : ""}
 
         </form>
     )
