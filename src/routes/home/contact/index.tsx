@@ -4,7 +4,7 @@ import React from 'react';
 import Header from '@components/headers/Style1';
 import Text from '@components/text/Style1';
 
-import Email from './email';
+import Email from '@share/email';
 
 const Contact = () => {
   return (

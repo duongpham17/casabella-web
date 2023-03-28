@@ -7,11 +7,12 @@ interface Props {
   lineHeight?: string,
   weight?: string,
   center?: boolean,
+  margin?: string,
 }
 
-const Style1 = ({value, lineHeight, size, weight, center}: Props) => {
+const Style1 = ({value, lineHeight, size, weight, center, margin}: Props) => {
   return (
-    <p className={styles.container} style={{fontSize: size, lineHeight: lineHeight, fontWeight: weight, textAlign: center ? "center" : "left"}}>{value}</p>
+    <p className={styles.container} style={{fontSize: size, lineHeight: lineHeight, fontWeight: weight, textAlign: center ? "center" : "left", margin: margin}}>{value}</p>
   )
 }
 

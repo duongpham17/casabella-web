@@ -24,7 +24,7 @@ const Footer = () => {
 
             <div>
                 <Header value="Contact" size='1rem' center margin='1rem' />
-                <Text value="Eamil@example.com" center />
+                <Text value="Email@example.com" center />
                 <Text value="(+44) 12345 678910" center/>
             </div>
 

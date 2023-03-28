@@ -5,7 +5,7 @@ import Introduction from './introudction';
 import Services from './services';
 import More from './more';
 import Social from './social';
-import Contact from '../../@share/contact';
+import Contact from './contact';
 
 import Observer from '@components/observer/Observer';
 
