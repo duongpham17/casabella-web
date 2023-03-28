@@ -19,6 +19,8 @@ export default function handler( req: NextApiRequest, res: NextApiResponse<Data>
     password: process.env.EMAIL_PASSWORD
   };
 
+  console.log(host);
+
   const transporter = nodemailer.createTransport({
     secure: true,
     port: 465,
