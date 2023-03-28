@@ -2,27 +2,7 @@ import styles from './Large.module.scss';
 import React, {useState} from 'react';
 import Link from 'next/link';
 import {AiOutlineInstagram} from 'react-icons/ai';
-
-const links = [
-  {
-    id: "1",
-    name: "Store",
-    value: "store",
-    href: "/store",
-  },
-  {
-    id: "2",
-    name: "Services",
-    value: "services",
-    href: "/services",
-  },
-  {
-    id: "3",
-    name: "Contact",
-    value: "contact",
-    href: "/contact",
-  },
-]
+import {links} from '../data';
 
 const Large = () => {
 

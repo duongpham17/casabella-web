@@ -13,7 +13,7 @@ const Index = () => {
     return (
         <div className={styles.container}>
 
-            { width >= 600  
+            { width >= 700  
                 ?
                     <Large />
                 :
