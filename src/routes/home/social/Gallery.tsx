@@ -39,10 +39,8 @@ const Gallery = () => {
                         <Image 
                             src={el.src} 
                             alt="cryptos"
-                            objectFit="cover"
-                            width={100}
-                            height={100}
-                            layout='responsive'
+                            width={500}
+                            height={500}
                         />
                     </div>
                 }
