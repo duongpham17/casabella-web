@@ -27,7 +27,6 @@ const Prices = () => {
           <Waxing />
         </Observer>
 
-
         <Observer>
           <Button value="Book now" center padding='1rem 5rem' margin='2rem'/>
         </Observer>
