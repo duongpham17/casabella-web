@@ -29,9 +29,7 @@ const Small = () => {
           <div className={styles.contents}>
             <ul> 
               {links.map(el => 
-                <li key={el.id}>
-                  <Link className={openLocal === el.value ? styles.selected : ""} href={el.href} onClick={() => onSelected(el.value)}>{el.name}</Link>
-                </li> 
+                <Link  key={el.id} href={el.href} className={openLocal === el.value ? styles.selected : ""} onClick={() => onSelected(el.value)}>{el.name}</Link>
               )}
             </ul>
             <div className={styles.social}>

@@ -11,7 +11,7 @@ html, body {
 }
   
 body{
-  background: rgba(231,228,233,255)
+  background: white
 }
   
 a, button, input, li, ul, p, q, textarea {
@@ -30,5 +30,5 @@ img{
   
 button, a{
   cursor: pointer;
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
 }

@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Meta from '@components/meta';
+import Prices from 'routes/prices';
 
-const Prices = () => {
+const PricesContainer = () => {
   return (
-    <div>Prices</div>
+    <>
+      <Meta title="Prices" />
+      <Prices />
+    </>
   )
 }
 
-export default Prices
+export default PricesContainer

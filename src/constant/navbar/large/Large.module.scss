@@ -10,7 +10,6 @@
 
     .links{
         display: flex;
-
         a{
             display: block;
             font-weight: 200;
@@ -38,9 +37,12 @@
 
     .social{
         text-align: right;
+        svg{
+            font-size: 2rem;
+        }
         a{
             font-size: 1.1rem;
-            padding: 1rem;
+            padding: 0.5rem 1rem ;
         }
     }
 }

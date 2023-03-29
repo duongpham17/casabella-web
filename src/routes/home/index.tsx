@@ -1,7 +1,7 @@
 import styles from './Home.module.scss';
 import React from 'react';
 
-import Introduction from './introudction';
+import Introduction from './introduction';
 import Services from './services';
 import More from './more';
 import Social from './social';

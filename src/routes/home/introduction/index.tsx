@@ -10,7 +10,7 @@ const Introduction = () => {
     <div className={styles.container}>
         <section>
 
-            <Header value="Introduce your brand" size='2rem' center/>
+            <Header value="Introduce your brand" size='clamp(4vw, 5vw, 6vw)' center/>
 
             <Text value="Welcome people to your site with an introduction that's short, sweet, and sounds like you" center/>
             

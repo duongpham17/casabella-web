@@ -1,18 +1,17 @@
 import styles from './Large.module.scss';
-import React, {useState} from 'react';
+import React from 'react';
 import Link from 'next/link';
 import {AiOutlineInstagram} from 'react-icons/ai';
 import {links} from '../data';
+import useOpen from '@hooks/useOpen';
 
 const Large = () => {
 
-  const lcoal_navbar_value = localStorage.getItem("navbar");
+  const {onOpenLocal, openLocal} = useOpen({initialState: "", local: "navbar"});
   
-  const [selected, setSelected] = useState(lcoal_navbar_value);
-
   const onSelected = (value: string) => {
     localStorage.setItem("navbar", value)
-    setSelected(value);
+    onOpenLocal(value);
   };
 
   return (
@@ -23,7 +22,7 @@ const Large = () => {
           <Link 
             key={el.id}
             href={el.href} 
-            className={selected === el.value ? styles.selected : ""}
+            className={openLocal === el.value ? styles.selected : ""}
             onClick={() => onSelected(el.value)}
           >
             {el.name} 

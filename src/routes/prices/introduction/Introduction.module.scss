@@ -1,0 +1,57 @@
+.container{
+    background-image: url(/prices.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;  
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 500px;
+    
+    height: 66vh;
+    padding: 20% 2%;
+
+    .buttons{
+        display: flex;
+        justify-content: center;
+
+        a{
+            background-color: white;
+            padding: 0.6rem 1rem;
+            margin: 1rem;   
+            box-shadow: 0 0 1px 5px white;
+            outline: 0px solid white;
+            width: 150px;
+            font-weight: 200;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            svg{
+                display: flex;
+                align-items: center;
+                font-size: 1rem;
+            }
+
+            span{
+                font-size: 0.9rem;
+            }
+
+            &:hover{
+                outline: 3px solid var(--clr-main-light);
+            }
+        }
+    }
+
+    @media (max-width: 600px){
+        .buttons{
+            display: block;
+            a{
+                width: 100%;
+                margin: 1rem 0;
+            }
+        }
+    }
+}
