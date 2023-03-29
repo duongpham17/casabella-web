@@ -17,7 +17,7 @@ const Treatment2 = () => {
               We offer advanced skin treatments for all aesthetics goals - so whether it's hydration, pigmentation or rejuvenation you're after, we've got you covered.
             </p>
 
-            <p>Facials • SkinPen Microneedling • Skin Peels • LED Light Therapy • Laser Treatments</p>
+            <p>Facials &#39; SkinPen Microneedling &#39; Skin Peels &#39; LED Light Therapy &#39; Laser Treatments</p>
 
             <Button value="book now" padding='1rem 2rem' />
         </div>

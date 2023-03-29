@@ -18,7 +18,7 @@ const Treatment3 = () => {
             Find out more about wrinkle relaxers, dermal fillers and skin boosters today!
             </p>
 
-            <p>Wrinkle Relaxers • Dermal Fillers • Profhilo</p>
+            <p>Wrinkle Relaxers &#39; Dermal Fillers &#39; Profhilo</p>
 
             <Button value="book now" padding='1rem 2rem' />
         </div>
