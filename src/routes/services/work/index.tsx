@@ -35,7 +35,7 @@ const Work = () => {
 
             <div className={styles.left}>
                 <p>how we work</p>
-                <h1>We here to help each and every body feel great - here's how we're making that happen.</h1>
+                <h1>We here to help each and every body feel great - here is how we are making that happen.</h1>
             </div>
 
             <div className={styles.right}>
