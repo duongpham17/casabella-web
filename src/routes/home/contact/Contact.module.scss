@@ -8,12 +8,14 @@
 
     h1, p{
         text-align: left;
+        margin-bottom: 1rem;
     }
 
     .left{
         grid-area: left;
         padding: 0 2rem;
         max-width: 600px;
+
     }
 
     .right{

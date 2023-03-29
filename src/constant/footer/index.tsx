@@ -9,7 +9,6 @@ const Footer = () => {
   return (
     <Observer>
         <footer className={styles.container}>
-
             <div>
                 <Header value="Location" size='1rem' center margin='1rem'/>
                 <Text value="123 Bitcoin Street" center />
@@ -27,7 +26,6 @@ const Footer = () => {
                 <Text value="Email@example.com" center />
                 <Text value="(+44) 12345 678910" center/>
             </div>
-
         </footer>
     </Observer>
   )

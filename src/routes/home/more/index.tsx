@@ -29,9 +29,8 @@ const More = () => {
             <Image 
                 src="/more.webp" 
                 alt="bitcoin" 
-                width={500}
-                height={500}
-                
+                width={400}
+                height={400}
             />
         </div>
 
