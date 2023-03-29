@@ -22,7 +22,7 @@ export const Layout = ({title, ogTitle = defaultOgTitle, description = defaultDe
         <meta name="og:title" content={ogTitle} key="og:title" />
         <meta property="og:url" content="https://www.wendynail.co.uk" key="og:url"/>
         <meta property="og:type" content="website" key="og:type"/>
-        <meta property="og:image" content="/favicon.ico" />
+        <meta property="og:image" content="/skin1.png" />
         <meta property="og:description" content={description} />
         <meta name="keywords" content={keywords} />
     </Head>
