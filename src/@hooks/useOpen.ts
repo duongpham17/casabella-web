@@ -21,7 +21,7 @@ const useOpen = <T>({initialState, local}: Props<T>) => {
         getLocalValue = ""
     };
     
-    const local_value_parsaed = (getLocalValue.includes("{") || getLocalValue.includes("[")) 
+    const local_value_parsaed =  getLocalValue && (getLocalValue.includes("{") || getLocalValue.includes("[")) 
         ? JSON.parse(getLocalValue) 
         :  getLocalValue;
 

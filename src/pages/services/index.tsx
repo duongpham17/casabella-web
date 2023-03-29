@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Services from 'routes/services';
+import Meta from '@components/meta';
 
-const Services = () => {
+const ServicesContainer = () => {
   return (
-    <div>Services</div>
+    <>
+      <Meta title="Services" keywords='services, nails, eyebrows, facials and more'/>
+      <Services/>
+    </>
   )
 }
 
-export default Services
+export default ServicesContainer

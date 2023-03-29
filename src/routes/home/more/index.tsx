@@ -27,7 +27,7 @@ const More = () => {
 
         <div className={styles.right}>
             <Image 
-                src="/image1.webp" 
+                src="/more.webp" 
                 alt="bitcoin" 
                 width={500}
                 height={500}

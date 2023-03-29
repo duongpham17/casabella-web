@@ -6,16 +6,25 @@ import Nails from './nails';
 import Facials from './facials';
 import Waxing from './waxing';
 
+import Observer from '@components/observer/Observer';
+
 const Prices = () => {
   return (
     <div className={styles.container}>
         <Introduction />
 
-        <Facials />
+        <Observer>
+          <Facials />
+        </Observer>
+        
+        <Observer>
+          <Nails />
+        </Observer>
 
-        <Nails />
-
-        <Waxing />
+        <Observer>
+          <Waxing />
+        </Observer>
+        
     </div>
   )
 }
