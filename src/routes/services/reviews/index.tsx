@@ -19,7 +19,7 @@ const Reviews = () => {
             <Swiper data={data} slidersPerView={width >= 1000 ? 3 : width >= 700 ? 2 : 1} arrows>
                 {(el) => 
                     <div key={el.id} className={styles.element}>
-                        <p className={styles.title}>"{el.title}"</p>
+                        <p className={styles.title}><q>{el.title}</q></p>
                         <p className={styles.des}>{el.des}</p>
                         <span>{[...new Array(el.stars)].map(() => <AiTwotoneStar key={generateid()}/>)}</span>
                     </div>
