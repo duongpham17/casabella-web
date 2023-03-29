@@ -9,10 +9,10 @@ import {AiOutlineInstagram} from 'react-icons/ai';
 
 const Small = () => {
   
-  const {open, onOpen, onOpenLocal, openLocal} = useOpen({initialState: "", local: "navbar"});
+  const {open, onOpen, openValue, onOpenValue} = useOpen({initialState: ""});
 
   const onSelected = (value: string) => {
-    onOpenLocal(value);
+    onOpenValue(value);
     onOpen();    
   };
 
@@ -29,7 +29,7 @@ const Small = () => {
           <div className={styles.contents}>
             <ul> 
               {links.map(el => 
-                <Link  key={el.id} href={el.href} className={openLocal === el.value ? styles.selected : ""} onClick={() => onSelected(el.value)}>{el.name}</Link>
+                <Link  key={el.id} href={el.href} className={openValue === el.value ? styles.selected : ""} onClick={() => onSelected(el.value)}>{el.name}</Link>
               )}
             </ul>
             <div className={styles.social}>

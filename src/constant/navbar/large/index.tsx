@@ -7,11 +7,11 @@ import useOpen from '@hooks/useOpen';
 
 const Large = () => {
 
-  const {onOpenLocal, openLocal} = useOpen({initialState: "", local: "navbar"});
+  const {onOpenValue, openValue} = useOpen({initialState: ""});
   
   const onSelected = (value: string) => {
     localStorage.setItem("navbar", value)
-    onOpenLocal(value);
+    onOpenValue(value);
   };
 
   return (
@@ -22,7 +22,7 @@ const Large = () => {
           <Link 
             key={el.id}
             href={el.href} 
-            className={openLocal === el.value ? styles.selected : ""}
+            className={openValue === el.value ? styles.selected : ""}
             onClick={() => onSelected(el.value)}
           >
             {el.name} 

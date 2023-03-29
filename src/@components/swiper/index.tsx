@@ -1,7 +1,7 @@
 // NOTE using grid template column and using fr units will break the width of the slider!
 
 import styles from './Swiper.module.scss';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper';
 import 'swiper/css';
@@ -11,11 +11,12 @@ import {MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight} from 'react-ico
 
 interface Props<T> {
     data: T[],
-    children: (data: T) => React.ReactNode,
+    children: (data: T, index: number) => React.ReactNode,
     slidersPerView?: number,
+    arrows?: boolean
 }
 
-const SwiperContainer = <T,>({data, children, slidersPerView=5}: Props<T>) => {
+const SwiperContainer = <T,>({data, children, slidersPerView=5, arrows}: Props<T>) => {
 
     const navigationPrevRef = useRef(null);
     const navigationNextRef = useRef(null);
@@ -23,7 +24,7 @@ const SwiperContainer = <T,>({data, children, slidersPerView=5}: Props<T>) => {
     return (
         <div className={styles.container}>
 
-           { data.length - 2 > 0 &&
+           {arrows && data.length - 2 > 0 &&
                 <div className={styles.navBtnLeft} >
                     <button ref={navigationPrevRef}><MdOutlineKeyboardArrowLeft/></button>
                 </div>
@@ -43,14 +44,14 @@ const SwiperContainer = <T,>({data, children, slidersPerView=5}: Props<T>) => {
 
                     {data.map((element, index) => 
                         <SwiperSlide key={index}>
-                            {children(element)}
+                            {children(element, index)}
                         </SwiperSlide>
                     )}
 
                 </Swiper>
             }
 
-            { data.length - 2 > 0 &&
+            {arrows && data.length - 2 > 0 &&
                 <div className={styles.navBtnRight} >
                     <button ref={navigationNextRef}><MdOutlineKeyboardArrowRight/></button>
                 </div>

@@ -12,7 +12,7 @@ const Introduction = () => {
 
         <div className={styles.buttons}>
           {data.map(el => 
-            <Link key={el.id} href={`#${el.value}`} value={el.name} />
+            <Link key={el.id} href={`#${el.value}`} value={el.name} margin="1rem" />
           )}
         </div>
       </section>

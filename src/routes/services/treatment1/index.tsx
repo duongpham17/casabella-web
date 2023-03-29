@@ -6,7 +6,7 @@ import Button from '@components/buttons/Style2';
 
 const Treatment1 = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="treatment1">
 
         <div className={styles.left}>
             <p className={styles.p1}>Good bye razor, Hello laser</p>
@@ -24,13 +24,13 @@ const Treatment1 = () => {
         </div>
 
         <div className={styles.right}>
+            <div/>
             <Image 
                 src="/services_woman.png"
                 alt="woman"
                 width={500}
                 height={500} 
             />
-            <div/>
         </div>
 
     </div>

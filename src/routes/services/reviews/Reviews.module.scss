@@ -1,0 +1,30 @@
+.container{
+    max-width: 1200px;
+    margin: auto;
+
+    h1{
+        margin-bottom: 2rem;
+        font-weight: 200;
+        font-size: clamp(1.5rem, 2.5vw, 2.5vw);
+        text-align: center;
+    }
+
+    .element{
+        border: 2px solid var(--clr-main-fade);
+        padding: 1rem;
+
+        .title{
+            height: 60px;
+        }
+        .des{
+            font-size: 0.9rem;
+            line-height: 1.5rem;
+            color: var(--clr-grey);
+            font-weight: 200;
+            height: 200px;
+        }
+        svg{
+            margin-right: 0.2rem;
+        }
+    }
+}

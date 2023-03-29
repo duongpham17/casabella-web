@@ -1,10 +1,10 @@
 import styles from './Introduction.module.scss';
 import React from 'react';
 import Header from '@components/headers/Style1';
-import {CgArrowLongRight} from 'react-icons/cg';
-import {data} from './data';
 
-import Link from '@components/link/Style2';
+// import {CgArrowLongRight} from 'react-icons/cg';
+// import {data} from './data';
+// import Link from '@components/link/Style2';
 
 const Introduction = () => {
   return (
@@ -12,11 +12,12 @@ const Introduction = () => {
       <section>
         <Header value="Discover our services" size="clamp(5vw, 6vw, 7vw)" center/>
 
-        <div className={styles.buttons}>
+        {/* <div className={styles.buttons}>
           {data.map(el => 
-            <Link key={el.id} href={`#${el.value}`} value={el.name} id={el.value} />
+            <Link key={el.id} href={`#${el.value}`} value={el.name} id={el.value} margin="1rem" />
           )}
-        </div>
+        </div> */}
+
       </section>
     </div>
   )
