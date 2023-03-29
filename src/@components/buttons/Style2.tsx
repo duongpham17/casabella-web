@@ -1,4 +1,4 @@
-import styles from './Style1.module.scss';
+import styles from './Style2.module.scss';
 import React from 'react';
 
 interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement>  {
@@ -10,12 +10,13 @@ interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement>  {
     fill?: boolean,
 }
 
-const Style1 = ({value, color="main", padding, margin, center, fill, ...props}: Props) => (
+const Style2 = ({value, color="main", padding, margin, center, fill, ...props}: Props) => (
     <div className={`${styles.container} ${center ? styles.center : ""} ${fill ? styles.fill : ""}`}>
         <button className={`${styles[color]}`} style={{padding: padding, margin: margin}} {...props}>
-            {value}
+            <span>{value}</span>
+            <span>&#x2192;</span>
         </button>
     </div>
 )
 
-export default Style1
+export default Style2

@@ -57,6 +57,9 @@
     }
 
     @media (max-width: 800px){
+        .bulk_discount{
+            display: block;
+        }
         .name{
             span:nth-child(2){
                 display: block;

@@ -19,10 +19,14 @@
         }
 
         button{
+            display: flex;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+        svg{           
             background: black;
             color: white;
-        }
-        svg{
             font-size: 2rem;
             display: flex;
         }

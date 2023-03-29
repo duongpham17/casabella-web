@@ -1,10 +1,12 @@
 import React from 'react';
 import Introduction from './introduction';
+import Treatment1 from './treatment1';
 
 const Services = () => {
   return (
     <div>
-        <Introduction />
+      <Introduction />
+      <Treatment1 />
     </div>
   )
 }
