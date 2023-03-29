@@ -14,7 +14,8 @@ const Treatment3 = () => {
             <p className={styles.p3}>Book your complimentary consultation today!</p>
 
             <p className={styles.p4}>
-            Cosmetic Injectables are only performed by highly experienced Medical Practioners using market-leading products - including Allergan, Juvederm, Nucleadyn and Profhilo. We pride ourselves on delivering natural, quality results tailored to your aesthetic objective. 
+            Cosmetic Injectables are only performed by highly experienced Medical Practioners using market-leading products - 
+            including Allergan, Juvederm, Nucleadyn and Profhilo. We pride ourselves on delivering natural, quality results tailored to your aesthetic objective. 
             Find out more about wrinkle relaxers, dermal fillers and skin boosters today!
             </p>
 

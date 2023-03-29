@@ -14,7 +14,7 @@ const Treatment2 = () => {
             <p className={styles.p3}>Book your complimentary consultation today!</p>
 
             <p className={styles.p4}>
-              We offer advanced skin treatments for all aesthetics goals - so whether it is hydration, pigmentation or rejuvenation you are after, we got you covered.
+              We offer advanced skin treatments for all aesthetics goals - so whether it's hydration, pigmentation or rejuvenation you're after, we've you covered.
             </p>
 
             <p>Facials &#39; SkinPen Microneedling &#39; Skin Peels &#39; LED Light Therapy &#39; Laser Treatments</p>
