@@ -14,7 +14,7 @@ const Reviews = () => {
     return (
         <div className={styles.container}>
 
-            <h1>That's what our customers say about Casa Bella</h1>
+            <h1>What our customers say about Casa Bella</h1>
 
             <Swiper data={data} slidersPerView={width >= 1000 ? 3 : width >= 700 ? 2 : 1} arrows>
                 {(el) => 
