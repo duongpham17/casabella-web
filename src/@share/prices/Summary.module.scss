@@ -20,13 +20,13 @@
 
         button{
             background: black;
+            *{
+                color: white;
+            }
         }
         svg{
             font-size: 2rem;
             display: flex;
-            *{
-                color: white;
-            }
         }
         .iconOpen{
             transition: 0.5s;
