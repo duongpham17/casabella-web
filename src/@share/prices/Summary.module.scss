@@ -20,13 +20,13 @@
 
         button{
             display: flex;
+            background: black;
+            color: white;
             &:hover{
                 opacity: 0.8;
             }
         }
         svg{           
-            background: black;
-            color: white;
             font-size: 2rem;
             display: flex;
         }

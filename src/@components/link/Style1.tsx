@@ -2,7 +2,7 @@ import styles from './Style1.module.scss';
 import React from 'react';
 import Link from 'next/link'
 
-interface Props {
+interface Props  {
     value: any,
     href: string,
     color?: "main" | "white" | "dark",
