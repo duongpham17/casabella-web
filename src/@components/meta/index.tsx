@@ -9,9 +9,10 @@ interface Props {
     ogTitle?: string,
     description?: string,
     keywords?: string,
+    image?: string,
 }
 
-export const Layout = ({title, ogTitle = defaultOgTitle, description = defaultDescription, keywords = defaultKeywords }: Props) => 
+export const Layout = ({title, image, ogTitle = defaultOgTitle, description = defaultDescription, keywords = defaultKeywords }: Props) => 
 (        
     <Head>
         <title>{title ? `Casa Bella | ${title}` : "Casa Bella"}</title>
@@ -22,7 +23,7 @@ export const Layout = ({title, ogTitle = defaultOgTitle, description = defaultDe
         <meta name="og:title" content={ogTitle} key="og:title" />
         <meta property="og:url" content="https://www.wendynail.co.uk" key="og:url"/>
         <meta property="og:type" content="website" key="og:type"/>
-        <meta property="og:image" content="/skin1.png" />
+        <meta property="og:image" content={image? "/skin1.png" : image} key="ogimage"/>
         <meta property="og:description" content={description} />
         <meta name="keywords" content={keywords} />
     </Head>
