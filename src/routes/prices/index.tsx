@@ -6,6 +6,8 @@ import Nails from './nails';
 import Facials from './facials';
 import Waxing from './waxing';
 
+import Button from '@components/buttons/Style1';
+
 import Observer from '@components/observer/Observer';
 
 const Prices = () => {
@@ -23,6 +25,11 @@ const Prices = () => {
 
         <Observer>
           <Waxing />
+        </Observer>
+
+
+        <Observer>
+          <Button value="Book now" center padding='1rem 5rem' margin='2rem'/>
         </Observer>
         
     </div>
