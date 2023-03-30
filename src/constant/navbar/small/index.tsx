@@ -9,7 +9,7 @@ import {AiOutlineInstagram} from 'react-icons/ai';
 
 const Small = () => {
   
-  const {open, onOpen, openValue, onOpenValue} = useOpen({initialState: ""});
+  const {open, setOpen, onOpen, openValue, onOpenValue} = useOpen({initialState: ""});
 
   const onSelected = (value: string) => {
     onOpenValue(value);
@@ -20,7 +20,7 @@ const Small = () => {
     <div className={styles.container}>
 
       <div className={`${styles.hamburger} ${open ? styles.hamburgerIsOpen : ""}`}>      
-        <Link href="/" onClick={() => onSelected("home")}><h1>Casa Bella</h1></Link>
+        <Link href="/" onClick={() => setOpen(false)}><h1>Casa Bella</h1></Link>
         <Hamburger onToggle={onOpen} toggled={open}/>
       </div>
 
