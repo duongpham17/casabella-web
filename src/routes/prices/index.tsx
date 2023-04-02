@@ -1,30 +1,39 @@
 import styles from './Prices.module.scss';
 import React from 'react';
-
-import Introduction from './introduction';
-import Nails from './nails';
-import Facials from './facials';
-import Waxing from './waxing';
+import {Props} from 'pages/prices';
 
 import Button from '@components/buttons/Style1';
-
 import Observer from '@components/observer/Observer';
 
-const Prices = () => {
+import Introduction from './introduction';
+
+import Header from '@share/prices/Header';
+import Summary from '@share/prices/Summary';
+import Table from '@share/prices/Table';
+import Background from '@share/prices/Background';
+
+const Prices = (props: Props) => {
+
   return (
     <div className={styles.container}>
-        <Introduction />
+        <Introduction {...props} />
 
         <Observer>
-          <Facials />
-        </Observer>
-        
-        <Observer>
-          <Nails />
-        </Observer>
+          {props.prices.map((price) => 
+              <div id={price.title.toLowerCase()} key={price._id}>
+                <Header value={price.title} />
 
-        <Observer>
-          <Waxing />
+                <Background>
+
+                {price.subsets.map(el => 
+                    <Summary value={el.title} key={el.title}>
+                        <Table data={el}/>
+                    </Summary>    
+                )}
+
+                </Background>
+            </div>  
+          )}
         </Observer>
 
         <Observer>
