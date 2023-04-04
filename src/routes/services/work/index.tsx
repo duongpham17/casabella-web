@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import useWindow from '@hooks/useWindow';
 import Swiper from '@components/swiper';
+import Observer from '@components/observer/Observer';
 
 const data = [
     {
@@ -31,31 +32,18 @@ const Work = () => {
     const {width} = useWindow();
 
     return (
-        <div className={styles.container}>
+        <Observer>
+            <div className={styles.container}>
 
-            <div className={styles.left}>
-                <p>how we work</p>
-                <h1>We here to help each and every body feel great - here is how we are making that happen.</h1>
-            </div>
+                <div className={styles.left}>
+                    <p>how we work</p>
+                    <h1>We here to help each and every body feel great - here is how we are making that happen.</h1>
+                </div>
 
-            <div className={styles.right}>
-                {width >= 900 
-                    ? 
-                        data.map(el => 
-                            <div className={styles.element} key={el.id}>
-                                <div className={styles.image}>
-                                    <Image src={el.src} alt="skin care" width={300} height={400} />
-                                    <p className={styles.id}>{el.id}</p>
-                                </div>
-                                <div className={styles.info}>
-                                    <p className={styles.title}>{el.title}</p>
-                                    <p className={styles.des}>{el.des}</p>
-                                </div>
-                            </div>    
-                        ) 
-                    : 
-                        <Swiper data={data} slidersPerView={width >= 600 ? 2 : 1}>
-                            {(el) => 
+                <div className={styles.right}>
+                    {width >= 900 
+                        ? 
+                            data.map(el => 
                                 <div className={styles.element} key={el.id}>
                                     <div className={styles.image}>
                                         <Image src={el.src} alt="skin care" width={300} height={400} />
@@ -66,12 +54,27 @@ const Work = () => {
                                         <p className={styles.des}>{el.des}</p>
                                     </div>
                                 </div>    
-                            }
-                        </Swiper>
-                }
+                            ) 
+                        : 
+                            <Swiper data={data} slidersPerView={width >= 600 ? 2 : 1}>
+                                {(el) => 
+                                    <div className={styles.element} key={el.id}>
+                                        <div className={styles.image}>
+                                            <Image src={el.src} alt="skin care" width={300} height={400} />
+                                            <p className={styles.id}>{el.id}</p>
+                                        </div>
+                                        <div className={styles.info}>
+                                            <p className={styles.title}>{el.title}</p>
+                                            <p className={styles.des}>{el.des}</p>
+                                        </div>
+                                    </div>    
+                                }
+                            </Swiper>
+                    }
+                </div>
             </div>
-        </div>
-  )
+        </Observer>
+    )
 }
 
 export default Work

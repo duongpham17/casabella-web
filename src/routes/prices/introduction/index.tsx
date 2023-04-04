@@ -2,9 +2,9 @@ import styles from './Introduction.module.scss';
 import React from 'react';
 import Header from '@components/headers/Style1';
 import Link from '@components/link/Style2';
-import {Props} from 'pages/prices';
+import {PropsTypes} from 'pages/prices';
 
-const Introduction = (props: Props) => {
+const Introduction = (props: PropsTypes) => {
 
   const titles = props.prices.map(el => el.title);
 
