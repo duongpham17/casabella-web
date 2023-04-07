@@ -10,7 +10,7 @@ const Table = ({subset}: {subset: IPricesSubsets }) => {
                 <tr>
                     <th className={styles.name}>TREATMENT</th>
                     <th>SINGLE PRICE</th>
-                    {subset.bulk_discount === 0 ? "" :
+                    {subset.type === "bulk" &&
                         <th className={styles.bulk}>
                             <span>BUY 3+</span>
                             <span className={styles.bulk_discount}>{subset.bulk_discount}% OFF</span>
@@ -37,7 +37,7 @@ const Table = ({subset}: {subset: IPricesSubsets }) => {
                                 <td className={styles.price}>£{el.price}</td>
                         }
 
-                        {subset.bulk_discount === 0 ? "" :
+                        {subset.type === "bulk" &&
                             el.bulk_discount ?
                             <td className={styles.price}>
                                 <s>£{el.bulk_price}</s>

@@ -19,7 +19,7 @@ export const getStaticProps = async () => {
       services: services.data.data || [],
       reviews: reviews.data.data || []
     },
-    // revalidate: 60 * 60 * 24 * 1  // in days
+    revalidate: 60 //60 * 60 * 24 * 1  // in days
   }
 };
 

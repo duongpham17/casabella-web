@@ -7,7 +7,6 @@ import Summary from '@share/prices/Summary';
 import Table from '@share/prices/Table';
 import Background from '@share/prices/Background';
 
-
 const index = ({prices}: {prices: IPrices[]}) => {
   return (
     <Observer>
