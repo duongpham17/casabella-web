@@ -2,7 +2,6 @@ import styles from './Introduction.module.scss';
 import React from 'react';
 
 import Header from '@components/headers/Style1'
-import Button from '@components/buttons/Style1';
 import Text from '@components/text/Style1';
 import Link from '@components/link/Style1';
 
@@ -15,7 +14,7 @@ const Introduction = () => {
 
             <Text value="Welcome people to your site with an introduction that's short, sweet, and sounds like you" center/>
             
-            <Link value="learn more" href="/services" padding='1rem 2rem'/>
+            <Link value="discover prices" href="/prices" padding='1rem 2rem'/>
             
         </section>
     </div>

@@ -2,9 +2,7 @@ import styles from './More.module.scss';
 import React from 'react';
 
 import Image from 'next/image';
-
 import Text from '@components/text/Style1';
-import Button from '@components/buttons/Style1';
 
 const More = () => {
   return (
@@ -19,8 +17,6 @@ const More = () => {
                     The way you tell your story online can make all the difference. 
                     Don't worry about sounding professional. Sound like you." 
                 />
-
-                <Button value="Learn more" color='white' />
                 
             </div>
         </div>
