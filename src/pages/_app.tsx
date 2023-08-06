@@ -2,8 +2,8 @@ import 'styles/global.scss';
 import styles from './App.module.scss';
 import type { AppProps } from 'next/app';
 
-import Constant from 'constant/navbar';
-import Footer from 'constant/footer';
+import Constant from 'layout/navbar';
+import Footer from 'layout/footer';
 
 import progress from '@misc/progress';
 
@@ -17,7 +17,9 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={font.className}>
       <Constant />
-      <div className={styles.container}> <Component {...pageProps} /></div>
+      <div className={styles.container}> 
+        <Component {...pageProps} />
+      </div>
       <Footer />
     </main>
   )

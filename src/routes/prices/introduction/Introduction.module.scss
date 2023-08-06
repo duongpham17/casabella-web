@@ -2,29 +2,29 @@
     background-image: url(/prices.webp);
     background-size: cover;
     background-position: center center;  
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     min-height: 500px;
-    
     height: 66vh;
-    padding: 20% 2%;
+    padding: 20% 1rem;
+    min-width: 320px;
 
     .buttons{
-        display: flex;
+        display: inline-flex;
+        width: 100%;
+        flex-wrap: wrap;
         justify-content: center;
     }
+}
 
-    @media (max-width: 600px){
+@media (max-width: 700px){
+    .container{
+        min-height: 600px;
+
         .buttons{
             display: block;
-            a{
-                width: 100%;
-                margin: 1rem 0;
-            }
         }
-    }
 
+    }
 }
