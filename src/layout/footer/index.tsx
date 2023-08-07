@@ -15,7 +15,7 @@ const Footer = () => {
         <footer className={styles.container}>
             <div>
                 <Header value="Location" size='1rem' center margin='1rem'/>
-                <Text value="1209 Haverstock Hill" center />
+                <Text value="209 Haverstock Hill" center />
                 <Text value="NW3 4QG" center/>
             </div>
 
