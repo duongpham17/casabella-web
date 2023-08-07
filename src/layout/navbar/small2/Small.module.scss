@@ -1,25 +1,22 @@
 .container{
   padding: 0 0.5rem;
 
-  img{
-    width: 100%;
-    object-fit: contain;
-    height: 30px;
-  }
-
   .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1;
+    img{
+      object-fit: contain;
+      width: 150px;
+    }
   }
   .hamburgerIsOpen{
     position: relative;
     color: var(--clr-main);
-    z-index: 1;
   }
 
-  .menuOpen{
+  .menu{
     background-color: rgba(110, 110, 110, 0.97);
     position: fixed;
     height: 100%;

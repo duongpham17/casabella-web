@@ -20,7 +20,7 @@ const Small = () => {
   return (
     <div className={styles.container}>
 
-      <div className={`${styles.hamburger} ${open ? styles.hamburgerIsOpen : ""}`}>      
+      <div className={`${styles.header} ${open ? styles.hamburgerIsOpen : ""}`}>      
         <Link href="/" onClick={() => setOpen(false)}>
           <Image src="/logo.png" alt="Casa Bella" width={100} height={50} unoptimized/>
         </Link>
@@ -28,7 +28,7 @@ const Small = () => {
       </div>
 
       <Observer>
-        <div className={`${styles.menuOpen} ${open ? styles.menuIsOpen : styles.menuIsClose}`}>
+        <div className={`${styles.menu} ${open ? styles.menuIsOpen : styles.menuIsClose}`}>
           <div className={styles.contents}>
             <ul> 
               {links.map(el => 

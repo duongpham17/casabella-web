@@ -28,7 +28,7 @@ const Small = () => {
       </div>
 
       <Observer>
-        <div className={`${styles.menuOpen} ${open ? styles.menuIsOpen : styles.menuIsClose}`}>
+        <div className={`${styles.menu} ${open ? styles.menuIsOpen : styles.menuIsClose}`}>
           <div className={styles.contents}>
             
             <ul> 
