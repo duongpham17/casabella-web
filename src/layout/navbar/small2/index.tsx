@@ -1,5 +1,5 @@
 import styles from './Small.module.scss';
-import React from 'react';
+import React, {useEffect} from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Squeeze as Hamburger } from 'hamburger-react';
@@ -10,17 +10,17 @@ import {AiOutlineInstagram} from 'react-icons/ai';
 
 const Small = () => {
   
-  const {open, setOpen, onOpen, openValue, onOpenValue} = useOpen({initialState: ""});
+  const {open, setOpen, onOpen} = useOpen({initialState: ""});
 
-  const onSelected = (value: string) => {
-    onOpenValue(value);
-    onOpen();    
-  };
+  useEffect(() => {
+    if(open) document.body.classList.add("bodyScrollBar");
+    return () => document.body.classList.remove('bodyScrollBar');
+}, [open]);
 
   return (
     <div className={styles.container}>
 
-      <div className={`${styles.hamburger} ${open ? styles.hamburgerIsOpen : ""}`}>      
+      <div className={`${styles.header} ${open ? styles.hamburgerIsOpen : ""}`}>      
         <Link href="/" onClick={() => setOpen(false)}>
           <Image src="/logo.png" alt="Casa Bella" width={100} height={50} unoptimized/>
         </Link>
@@ -33,7 +33,7 @@ const Small = () => {
             
             <ul> 
               {links.map(el => 
-                <Link key={el.id} href={el.href} onClick={() => onSelected(el.value)}>{el.name}</Link>
+                <Link key={el.id} href={el.href} onClick={onOpen}>{el.name}</Link>
               )}
             </ul>
 

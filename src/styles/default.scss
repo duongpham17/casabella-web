@@ -12,6 +12,12 @@ html, body {
 body{
   background: white
 }
+.bodyScrollBar{
+  overflow: hidden;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
   
 a, button, input, li, ul, p, q, textarea {
   text-decoration: none;
