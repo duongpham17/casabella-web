@@ -9,7 +9,7 @@ const Table = ({data}: {data: PricesDataSubsetsProps }) => {
             <thead>
                 <tr>
                     <th className={styles.name}>TREATMENT</th>
-                    <th>SINGLE</th>
+                    <th>PRICE</th>
                     {data.bulk_discount === 0 ? "" :
                         <th className={styles.bulk}>
                             <span>BUY 3+</span>
