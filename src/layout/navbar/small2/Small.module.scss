@@ -1,5 +1,5 @@
 .container{
-  padding: 0.5rem;
+  padding: 0 0.5rem;
 
   img{
     width: 100%;
@@ -15,10 +15,6 @@
     position: relative;
   }
   .hamburgerIsOpen{
-    position: fixed;
-    width: 100%;
-    left: 0;
-    padding: 0 0.5rem;
     color: var(--clr-main);
   }
 
@@ -30,7 +26,6 @@
     top: 0;
     left: 0;
     right: 0;
-    padding: 0.5rem;
 
     display: flex;
     align-items: center;

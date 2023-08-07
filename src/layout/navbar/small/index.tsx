@@ -22,7 +22,7 @@ const Small = () => {
 
       <div className={`${styles.hamburger} ${open ? styles.hamburgerIsOpen : ""}`}>      
         <Link href="/" onClick={() => setOpen(false)}>
-          <Image src="/logo.png" alt="Casa Bella" width={40} height={40} unoptimized/>
+          <Image src="/logo.png" alt="Casa Bella" width={100} height={50} unoptimized/>
         </Link>
         <Hamburger onToggle={onOpen} toggled={open}/>
       </div>

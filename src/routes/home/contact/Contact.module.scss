@@ -1,6 +1,9 @@
 .container{
-    margin: 5rem 0;
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 1rem;
     display: grid;
+    gap: 1rem;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "left right"
@@ -8,14 +11,16 @@
 
     h1, p{
         text-align: left;
-        margin-bottom: 1rem;
     }
 
     .left{
         grid-area: left;
-        padding: 0 2rem;
-        max-width: 600px;
+        background-color: var(--clr-main-fade);
+        padding: 1rem;
 
+        .item{
+            margin-bottom: 2rem;
+        }
     }
 
     .right{

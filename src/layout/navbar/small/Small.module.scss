@@ -1,10 +1,10 @@
 .container{
-  padding: 1rem;
+  padding: 0.5rem;
 
   img{
     width: 100%;
     object-fit: contain;
-    height: auto;
+    height: 30px;
   }
 
   .hamburger{
@@ -18,7 +18,7 @@
     position: fixed;
     width: 100%;
     left: 0;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
     color: var(--clr-main);
   }
 
