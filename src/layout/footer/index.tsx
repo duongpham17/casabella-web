@@ -8,6 +8,9 @@ import Text from '@components/text/Style1';
 const Footer = () => {
   return (
     <Observer>
+
+        <div className={styles.line} ></div>
+
         <footer className={styles.container}>
             <div>
                 <Header value="Location" size='1rem' center margin='1rem'/>

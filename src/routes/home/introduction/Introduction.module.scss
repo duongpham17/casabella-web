@@ -1,15 +1,14 @@
 .container{
-    background-image: url(/home.webp);
+    background-image: url(/home.jpeg);
     background-size: cover;
     background-position: center center;  
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     min-height: 500px;
     height: 66vh;
     padding: 20% 10%;
+    margin-top: -4.5rem;
 
     section{
         text-align: center;

@@ -1,13 +1,13 @@
 .container{
-    padding: 8rem 0;
+    max-width: 1200px;
+    margin: auto;
+    padding: 8rem 1rem;
     display: grid;
+    gap: 1rem;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "left right"
     ;
-    background-image: url(/contact.webp);
-    background-size: cover;
-    background-position: center center;  
 
     h1, p{
         text-align: left;
@@ -15,8 +15,8 @@
 
     .left{
         grid-area: left;
-        padding: 0 2rem;
-        max-width: 600px;
+        background-color: var(--clr-main-fade);
+        padding: 1rem;
 
         .item{
             margin-bottom: 2rem;

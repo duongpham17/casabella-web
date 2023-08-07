@@ -3,7 +3,7 @@ import React from 'react';
 
 import useWindowSize from '@hooks/useWindow';
 
-import Small from './small';
+import Small from './small2';
 import Large from './large';
 
 const Index = () => {
@@ -13,7 +13,7 @@ const Index = () => {
     return (
         <div className={styles.container}>
 
-            { width >= 700  
+            { width >= 800  
                 ?
                     <Large />
                 :

@@ -4,7 +4,6 @@
   img{
     width: 100%;
     object-fit: contain;
-    height: auto;
   }
 
   .hamburger{
@@ -40,34 +39,32 @@
     opacity: 0;
 
     .contents{
-      position: relative;
+      text-align: center;
       width: 100%;
       ul{      
         a{
           display: block;
           font-size: clamp(1.5rem, 4vh, 10vh);
           font-weight: 300;
-          border-right: 2px solid transparent;
           color: var(--clr-main);
-  
           &:hover{
-            border-right-color: var(--clr-main);
+            color: var(--clr-main-fade);
           }
         }
       }
   
       .social{
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        padding: 0.5rem;
+        margin-top: 2rem;
         a{
           font-size: clamp(1.5rem, 4vh, 10vh);
+        }
+        .insta{
           color: var(--clr-main);
+          font-size: 5rem;
           &:hover{
             color: white;
           }
-        }        
+        }
       }
     }
 

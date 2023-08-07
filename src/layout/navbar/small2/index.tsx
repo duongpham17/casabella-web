@@ -30,16 +30,19 @@ const Small = () => {
       <Observer>
         <div className={`${styles.menuOpen} ${open ? styles.menuIsOpen : styles.menuIsClose}`}>
           <div className={styles.contents}>
+            
             <ul> 
               {links.map(el => 
-                <Link key={el.id} href={el.href} className={openValue === el.value ? styles.selected : ""} onClick={() => onSelected(el.value)}>{el.name}</Link>
+                <Link key={el.id} href={el.href} onClick={() => onSelected(el.value)}>{el.name}</Link>
               )}
             </ul>
+
             <div className={styles.social}>
               <Link href="https://www.google.com/search?q=bitcoin&sxsrf=APwXEdcEQFjW999eOAM1eajuNe9VIVt1qA:1679934728747&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiAvoLGxPz9AhWNSUEAHSFrAFAQ_AUoA3oECAEQBQ&biw=1150&bih=948&dpr=1" rel="noopener noreferrer" target="_blank">  
                 <AiOutlineInstagram className={styles.insta}/>
               </Link>
             </div>
+
           </div>
         </div>
       </Observer>

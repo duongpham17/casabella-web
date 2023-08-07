@@ -1,3 +1,9 @@
+.line{
+    border-top: 1px solid var(--clr-main);
+    width: 50%;
+    margin: 0 auto;
+}
+
 .container{
     padding: 2rem 1rem;
     display: flex;

@@ -1,5 +1,5 @@
 .container{
-    background-image: url(/services.webp);
+    background-image: url(/contact.webp);
     background-size: cover;
     background-position: center center;  
     display: flex;
@@ -11,17 +11,20 @@
     margin-top: -4.5rem;
 
     .buttons{
-        display: flex;
+        display: inline-flex;
+        width: 100%;
+        flex-wrap: wrap;
         justify-content: center;
     }
+}
 
-    @media (max-width: 600px){
+@media (max-width: 700px){
+    .container{
+        min-height: 600px;
+
         .buttons{
             display: block;
-            a{
-                width: 100%;
-                margin: 1rem 0;
-            }
         }
+
     }
 }

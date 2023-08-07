@@ -1,10 +1,12 @@
 :root{
-    --clr-main: rgb(199, 146, 136);
-    --clr-main-light: hsl(10, 36%, 70%);
-    --clr-main-fade: hsl(24, 100%, 98%);
-    --clr-main-transparent: rgb(206, 160, 151, 0.5);
+    --clr-main: rgb(219,185,118);
+    --clr-main-light: hsla(40, 58%, 66%, 0.8);
+    --clr-main-fade: rgb(251,247,239);
+    --clr-main-transparent: rgba(219,185,118, 0.5);
+
     --clr-background: rgba(231,228,233,255);
     --clr-background-light: rgb(228, 226, 226);
+    
     --clr-brown-light: rgb(228, 220, 210);
     --clr-dark: #555555;
     --clr-grey: rgb(149, 149, 149); 

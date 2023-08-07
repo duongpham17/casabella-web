@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
 const defaultDescription = "Nail salon, beauty services and products";
-const defaultKeywords = "beauty, footcare, pedicure, massage, eyelashes, corringham, stanford, tint, ombre, fullset, infills, sns, care, facial";
+const defaultKeywords = "beauty, footcare, pedicure, massage, eyelashes, london, tint, ombre, fullset, infills, sns, care, facial";
 const defaultOgTitle = "london, nails, footcare, pedicure, massage, eyelashes, facial"
 
 interface Props {
@@ -21,7 +21,7 @@ export const Layout = ({title, image, ogTitle = defaultOgTitle, description = de
         <meta name="theme-color" content="#000000" />
         <meta name="description" content={description} />
         <meta name="og:title" content={ogTitle} key="og:title" />
-        <meta property="og:url" content="https://www.wendynail.co.uk" key="og:url"/>
+        <meta property="og:url" content="https://www.casabellalondon.co.uk" key="og:url"/>
         <meta property="og:type" content="website" key="og:type"/>
         <meta property="og:image" content={image} key="ogimage"/>
         <meta property="og:description" content={description} />
