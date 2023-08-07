@@ -1,5 +1,5 @@
 import styles from './Small.module.scss';
-import React from 'react';
+import React, {useEffect} from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Squeeze as Hamburger } from 'hamburger-react';
@@ -16,6 +16,11 @@ const Small = () => {
     onOpenValue(value);
     onOpen();    
   };
+
+  useEffect(() => {
+    if(open) document.body.classList.add("bodyScrollBar");
+    return () => document.body.classList.remove('bodyScrollBar');
+}, [open]);
 
   return (
     <div className={styles.container}>

@@ -14,7 +14,7 @@ const Introduction = () => {
 
             <Text value="Welcome people to your site with an introduction that's short, sweet, and sounds like you" center/>
             
-            <Link value="discover prices" href="/prices" padding='1rem 2rem'/>
+            <Link value="discover services" href="/services" padding='1rem 2rem'/>
             
         </section>
     </div>
