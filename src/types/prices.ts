@@ -6,6 +6,7 @@ export interface IPricesItems {
     discount: number,
     bulk_price: number,
     bulk_discount: boolean,
+    description: string
 }
 
 export interface IPricesSubsets {

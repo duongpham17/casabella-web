@@ -26,16 +26,26 @@
         }
         .name{
             text-align: left;
+            div{
+                span{
+                    display: block;
+                    white-space: pre-line;
+                }
+                span:nth-child(2){
+                    color: var(--clr-grey);
+                    font-size: 0.8rem;
+                }
+            }
             span{
                 margin-right: 0.5rem;
             }
-            span:nth-child(2){
+            .discount{
                 font-size: 0.7rem;
                 background-color: var(--clr-red);
                 color: white;
                 font-weight: 200;
-                padding: 0.15rem;
-                width: 60px;
+                padding: 0.2rem 0.5rem;
+                width: 80px;
                 text-align: center;
             }
         }

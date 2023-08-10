@@ -21,8 +21,8 @@ const Footer = () => {
 
             <div>
                 <Header value="Hours" size='1rem' center margin='1rem'/>
-                <Text value="Monday - Friday" center />
-                <Text value="11:00 am - 11:00 pm" center/>
+                <Text value="Monday - Sunday" center />
+                <Text value="10:00 am - 8:00 pm" center/>
             </div>
 
             <div>

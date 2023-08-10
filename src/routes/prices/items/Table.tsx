@@ -23,8 +23,11 @@ const Table = ({data}: {data: PricesDataSubsetsProps }) => {
                     <tr key={el.name}>
 
                         <td className={styles.name}>
-                            <span>{el.name}</span>
-                            {el.discount > 0 && <span>{el.discount}% OFF</span>}
+                            <div>
+                                <span>{el.name}</span>
+                                <span>{el.description}</span>
+                            </div>
+                            {el.discount > 0 && <span className={styles.discount}>{el.discount}% OFF</span>}
                         </td>
 
                         {el.discount > 0  
