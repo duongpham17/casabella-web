@@ -32,8 +32,23 @@ const Small = () => {
           <div className={styles.contents}>
             
             <ul> 
-              {links.map(el => 
-                <Link key={el.id} href={el.href} onClick={onOpen}>{el.name}</Link>
+            {links.map((el) => 
+              el.href.includes("http") ?
+                <Link 
+                    key={el.id}
+                    href={el.href} 
+                    rel="noopener noreferrer" target="_blank"
+                  >
+                  {el.name} 
+                </Link> 
+              : 
+                  <Link 
+                    key={el.id}
+                    href={el.href} 
+                    onClick={onOpen}
+                  >
+                  {el.name} 
+                </Link>
               )}
             </ul>
 

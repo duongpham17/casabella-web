@@ -20,14 +20,24 @@ const Large = () => {
 
       <div className={styles.links}>
         {links.map((el) => 
-          <Link 
-            key={el.id}
-            href={el.href} 
-            className={openValue === el.value ? styles.selected : ""}
-            onClick={() => onSelected(el.value)}
-          >
-            {el.name} 
-          </Link>
+            el.href.includes("http") ?
+            <Link 
+                key={el.id}
+                href={el.href} 
+                className={openValue === el.value ? styles.selected : ""}
+                rel="noopener noreferrer" target="_blank"
+              >
+              {el.name} 
+            </Link> 
+          : 
+              <Link 
+                key={el.id}
+                href={el.href} 
+                className={openValue === el.value ? styles.selected : ""}
+                onClick={() => onSelected(el.value)}
+              >
+              {el.name} 
+            </Link>
         )}
       </div>
 
