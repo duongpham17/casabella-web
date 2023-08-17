@@ -49,7 +49,8 @@ const Large = () => {
 
       <div className={styles.social}>
         <div></div>
-        <Link href="https://www.google.com/search?q=bitcoin&sxsrf=APwXEdcEQFjW999eOAM1eajuNe9VIVt1qA:1679934728747&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiAvoLGxPz9AhWNSUEAHSFrAFAQ_AUoA3oECAEQBQ&biw=1150&bih=948&dpr=1" rel="noopener noreferrer" target="_blank">  
+        <Link href="https://www.instagram.com/casabellalondon" rel="noopener noreferrer" target="_blank">  
+            <small>@casabellalondon</small>
             <AiOutlineInstagram />
         </Link>
       </div>

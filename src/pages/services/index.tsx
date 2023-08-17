@@ -3,21 +3,17 @@ import Services from 'routes/services';
 import Meta from '@components/meta';
 import {api} from '@misc/api';
 import { IServices } from 'types/services';
-import { IReviews } from 'types/reviews';
- 
+
 export interface PropsTypes {
-  reviews: IReviews[],
   services: IServices[]
 };
 
 export const getStaticProps = async () => {
   const services = await api.get('/services');
-  const reviews = await api.get('/reviews');
 
   return {
     props: {
       services: services.data.data || [],
-      reviews: reviews.data.data || []
     },
     revalidate: 60 //60 * 60 * 24 * 1  // in days
   }

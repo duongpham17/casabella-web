@@ -46,6 +46,7 @@
   
           &:hover{
             border-right-color: var(--clr-main);
+            color: white;
           }
         }
       }
@@ -58,10 +59,15 @@
         a{
           font-size: clamp(1.5rem, 4vh, 10vh);
           color: var(--clr-main);
+          display: flex;
+          align-items: center;
           &:hover{
             color: white;
           }
-        }        
+        }   
+        small{
+          font-size: 1.3rem;
+        }    
       }
     }
 

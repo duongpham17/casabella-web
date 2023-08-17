@@ -10,12 +10,8 @@ import {AiOutlineInstagram} from 'react-icons/ai';
 
 const Small = () => {
   
-  const {open, setOpen, onOpen, openValue, onOpenValue} = useOpen({initialState: ""});
+  const {open, setOpen, onOpen} = useOpen({initialState: ""});
 
-  const onSelected = (value: string) => {
-    onOpenValue(value);
-    onOpen();    
-  };
 
   useEffect(() => {
     if(open) document.body.classList.add("bodyScrollBar");
@@ -56,8 +52,9 @@ const Small = () => {
               )}
             </ul>
             <div className={styles.social}>
-              <Link href="https://www.google.com/search?q=bitcoin&sxsrf=APwXEdcEQFjW999eOAM1eajuNe9VIVt1qA:1679934728747&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiAvoLGxPz9AhWNSUEAHSFrAFAQ_AUoA3oECAEQBQ&biw=1150&bih=948&dpr=1" rel="noopener noreferrer" target="_blank">  
+              <Link href="https://www.instagram.com/casabellalondon" rel="noopener noreferrer" target="_blank">  
                 <AiOutlineInstagram className={styles.insta}/>
+                <small>@casabellalondon</small>
               </Link>
             </div>
           </div>

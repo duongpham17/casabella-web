@@ -3,6 +3,9 @@ import React from 'react';
 import {IServices} from 'types/services';
 import Button from '@components/buttons/Style2';
 import Observer from '@components/observer/Observer';
+import Link from '@components/link/Style2';
+
+//https://casabella.zenoti.com/webstoreNew/services
 
 const Treatment = ({services}: {services: IServices[]}) => {
   return (
@@ -21,7 +24,7 @@ const Treatment = ({services}: {services: IServices[]}) => {
 
               {el.text_5 && <p className={styles.p5}> {el.text_5} </p>}
 
-              <Button value="book now" padding='1rem 2rem' />
+              <Link href="https://casabella.zenoti.com/webstoreNew/services" value="book now" style={{width: "200px"}} rel="noopener noreferrer" target="_blank" />
           </div>
 
           <div className={styles.image}>

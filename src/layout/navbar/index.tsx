@@ -3,7 +3,7 @@ import React from 'react';
 
 import useWindowSize from '@hooks/useWindow';
 
-import Small from './small2';
+import Small from './small';
 import Large from './large';
 
 const Index = () => {

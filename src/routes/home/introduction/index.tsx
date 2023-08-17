@@ -10,9 +10,9 @@ const Introduction = () => {
     <div className={styles.container}>
         <section>
 
-            <Header value="Introduce your brand" size='clamp(4vw, 5vw, 6vw)' center/>
+            <Header value="Welcome to Casa Bella" size='clamp(4vw, 5vw, 6vw)' center/>
 
-            <Text value="Welcome people to your site with an introduction that's short, sweet, and sounds like you" center/>
+            <Text value="Where Beauty and Elegance meet. Step into a realm of indulgence where we celebrate and enhance your distinct radiance. Explore the craft of refined beauty through our exceptional treatments and tailored care. Your journey to timeless charm begins here." center/>
             
             <Link value="discover services" href="/services" padding='1rem 2rem'/>
             

@@ -1,8 +1,8 @@
 export const links = [
     {
       id: "1",
-      name: "Prices",
-      value: "Prices",
+      name: "Book now",
+      value: "Book now",
       href: "http://casabella.zenoti.com/webstorenew",
     },
     {

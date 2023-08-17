@@ -20,6 +20,11 @@
 
         .item{
             margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            p{
+                margin: 0 0.5rem;
+            }
         }
     }
 

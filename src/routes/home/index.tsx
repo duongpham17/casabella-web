@@ -3,8 +3,6 @@ import React from 'react';
 
 import Introduction from './introduction';
 import Services from './services';
-import More from './more';
-import Social from './social';
 import Contact from './contact';
 
 import Observer from '@components/observer/Observer';
@@ -17,14 +15,6 @@ const Index = () => {
 
       <Observer>
         <Services />
-      </Observer>
-
-      <Observer>
-        <More />
-      </Observer>
-
-      <Observer>
-        <Social />
       </Observer>
 
       <Observer>
