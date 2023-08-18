@@ -12,7 +12,7 @@ const Treatment = ({services}: {services: IServices[]}) => {
     <div className={styles.container}>
     {services.map((el, index) => 
       <Observer key={el._id}>
-        <div className={`${styles.element} ${index % 2 !== 0 ? styles.even : styles.odd}`}>
+        <div className={`${styles.element} ${index % 2 !== 0 ? styles.even : styles.odd}`} id={el.text_2}>
           <div className={styles.text}>
               {el.text_1 && <p className={styles.p1}>{el.text_1}</p>}
               

@@ -1,7 +1,7 @@
 import React from 'react';
 import Services from 'routes/services';
 import Meta from '@components/meta';
-import {api} from '@misc/api';
+import { api } from '@misc/api';
 import { IServices } from 'types/services';
 
 export interface PropsTypes {
@@ -9,7 +9,7 @@ export interface PropsTypes {
 };
 
 export const getStaticProps = async () => {
-  const services = await api.get('/services');
+  const services = await api.get('/services/type=services');
 
   return {
     props: {

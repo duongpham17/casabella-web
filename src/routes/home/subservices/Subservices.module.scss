@@ -1,0 +1,90 @@
+.container{
+    padding: 7rem 1rem;
+    text-align: center;
+    
+    .header, .images{
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .header{
+        min-width: 250px;
+        b, h1{
+            display: block;
+            margin-bottom: 2rem;
+        }
+        b{
+            display: block;
+            font-weight: 200;
+            color: var(--clr-main);
+        }
+        h1{
+            font-weight: 200;
+            font-size: 1.7rem
+        }
+    }
+
+    .images{
+        display: flex;
+        justify-content: center;
+
+        .element{
+            margin: 0.3rem;
+            background-color: white;
+            border: 2px solid var(--clr-main-fade);
+            width: 300px;
+
+            .image{
+                position: relative;
+                img{
+                    width: 100%;
+                    height: clamp(350px, 20vw, 20vw);
+                }
+                .id{
+                    position: absolute;
+                    bottom: 0;
+                    padding: 0.4rem;
+                    background-color: rgb(178, 165, 158);
+                    width: 40px;
+                    text-align: center;
+                    color: white;
+                    font-size: 0.9rem;
+                    font-weight: 200;
+                }
+            }
+
+            .info{
+                padding: 1rem;
+                p{
+                    font-weight: 200;
+                }
+                .title{
+                    font-style: italic;
+                }
+                .des{
+                    margin-top: 1rem;
+                    font-size: 0.8rem;
+                    color: var(--clr-grey);
+                    line-height: 1.2rem;
+                }
+            }
+
+        }
+    }
+
+    @media (max-width: 900px){
+
+        .images{
+            .element{
+                margin: 0.3rem;
+                background-color: white;
+                border: 2px solid var(--clr-main-fade);
+                min-height: 500px;
+                width: 100%;
+            }
+        }
+
+    
+    }
+
+}

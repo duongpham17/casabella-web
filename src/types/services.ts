@@ -1,5 +1,6 @@
 export interface IServices {
     _id: string,
+    type: string,
     text_1: string,
     text_2: string,
     text_3: string,
