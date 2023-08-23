@@ -1,5 +1,5 @@
 import 'styles/global.scss';
-import styles from './App.module.scss';
+import styles from './_app.module.scss';
 import type { AppProps } from 'next/app';
 
 import Constant from 'layout/navbar';

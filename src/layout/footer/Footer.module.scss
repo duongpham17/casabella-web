@@ -9,11 +9,18 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
+    a{
+        &:hover{
+            color: var(--clr-main);
+        }
+    }
 }
 
 @media (max-width: 700px){
     .container{
         display: block;
+        text-align: center;
 
         div{
             margin: 1rem 0;

@@ -31,6 +31,11 @@ const Footer = () => {
                 <Text value={<a href="tel:02086167977">020 8616 7977</a>} center/>
             </div>
         </footer>
+
+        <div className={styles.line} ></div>
+        <div className={styles.container}>
+            <Link href="/terms">Terms & Conditions</Link>
+        </div>
     </Observer>
   )
 }
