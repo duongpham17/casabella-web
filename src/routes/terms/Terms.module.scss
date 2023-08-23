@@ -8,11 +8,13 @@
         text-align: center;
         padding: 1rem;
         margin: 2rem 0;
+        position: relative;
         input{
             margin: auto;
-            width: 60%;
+            width: 100%;
+            max-width: 1000px;
             border: 2px solid var(--clr-main-light);
-            padding: 0.5rem;
+            padding: 0.8rem;
             border-radius: 5px;
         }
     }
