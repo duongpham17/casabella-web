@@ -4,13 +4,13 @@
 
     video{
         width: 100%;
+        display: block;
     }
 
     section{
         background-color: var(--clr-main-fade);
         padding: 5rem 1rem;
         text-align: center;
-
         p{
             max-width: 80%;
             margin: 3rem auto;
