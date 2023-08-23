@@ -1,13 +1,17 @@
 .container{
-    max-width: 1200px;
-    margin: auto;
-    padding: 8rem 1rem;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "left right"
-    ;
+    background-color: var(--clr-main-fade);
+
+    section{
+        max-width: 1200px;
+        margin: auto;
+        padding: 8rem 1rem;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "left right"
+        ;
+    }
 
     h1, p{
         text-align: left;
@@ -15,7 +19,6 @@
 
     .left{
         grid-area: left;
-        background-color: var(--clr-main-fade);
         padding: 1rem;
 
         .item{
@@ -33,11 +36,13 @@
     }
 
     @media (max-width: 800px){
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "left"
-        "right"
-        ;
+        section{
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "left"
+            "right"
+            ;
+        }
 
         .left{
             max-width: 100%;

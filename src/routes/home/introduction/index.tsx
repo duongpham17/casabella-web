@@ -8,21 +8,13 @@ import Link from '@components/link/Style1';
 const Introduction = () => {
   return (
     <div className={styles.container}>
+      <div>
+        <Header value="Where Beauty and Elegance meet" size='clamp(4vw, 4vw, 5vw)' center/>
 
-      <video autoPlay muted loop id="myVideo">
-        <source src="/intro.mp4" type="video/mp4" />
-      </video>
+        <Text value="Step into a realm of indulgence where we celebrate and enhance your distinct radiance." center/>
 
-      <section>
-
-          <Header value="Where Beauty and Elegance meet" size='clamp(4vw, 5vw, 6vw)' center/>
-
-          <Text value="Step into a realm of indulgence where we celebrate and enhance your distinct radiance." center/>
-          
-          <Link value="book now" href="http://casabella.zenoti.com/webstorenew" open padding='1rem 2rem'/>
-          
-      </section>
-        
+        <Link value="book now" href="http://casabella.zenoti.com/webstorenew" open padding='1rem 2rem'/>
+      </div>
     </div>
   )
 }

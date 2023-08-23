@@ -1,0 +1,20 @@
+.container{
+    text-align: center;
+    padding: 7rem 1rem;
+
+    .video{
+
+        video{
+            width: 100% !important;
+            max-width: 1000px;
+        }
+
+    }
+
+    b{
+        display: block;
+        font-weight: 200;
+        color: var(--clr-main);
+        margin: 2rem 1rem;
+    }
+}
