@@ -13,7 +13,14 @@ interface Props extends React.DetailedHTMLProps<React.AnchorHTMLAttributes<HTMLA
 
 const Style1 = ({value, color="main", padding, margin, center, href, open, ...props}: Props) => (
     <div className={`${styles.container} ${center ? styles.center : ""}`}>
-        <a className={`${styles[color]}`} style={{padding: padding, margin: margin}} href={href} rel={open ? "noopener noreferrer" : ""} target={open ? "_blank" : ""} {...props}>
+        <a 
+            className={`${styles[color]}`} 
+            style={{padding: padding, margin: margin}}
+            href={href} 
+            rel={open ? "noopener noreferrer" : ""} 
+            target={open ? "_blank" : ""} 
+            {...props}
+        >
             <span>{value}</span>
             <span>&#x2192;</span>
         </a>
