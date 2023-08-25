@@ -3,7 +3,7 @@ export const links = [
       id: "1",
       name: "Book now",
       value: "Book now",
-      href: "http://casabella.zenoti.com/webstorenew",
+      href: "booking.casabellalondon.co.uk",
     },
     {
       id: "2",

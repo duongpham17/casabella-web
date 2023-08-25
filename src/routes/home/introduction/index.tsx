@@ -13,7 +13,7 @@ const Introduction = () => {
 
         <Text value="Step into a realm of indulgence where we celebrate and enhance your distinct radiance." center/>
 
-        <Link value="book now" href="http://casabella.zenoti.com/webstorenew" open padding='1rem 2rem'/>
+        <Link value="book now" href="booking.casabellalondon.co.uk" open padding='1rem 2rem'/>
       </div>
     </div>
   )
