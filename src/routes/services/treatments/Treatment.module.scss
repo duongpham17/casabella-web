@@ -26,7 +26,16 @@
                 font-size: 0.8rem;
                 color: var(--clr-grey);
             }
-    
+
+            .actions{
+                display: flex;
+                align-items: center;
+
+                button{
+                    margin-left: 1rem;
+                    padding: 1rem;
+                }
+            }
     
         }
     
@@ -38,6 +47,16 @@
                 height: 100%;
             }
         }
+
+        .more{
+            padding: 2.5rem;
+            padding-top: 1rem;
+
+            b, h1, h2, h3, h4, p {
+                margin-bottom: 0.5rem;
+                font-weight: 200;
+            }
+        }
     
     
         @media (max-width: 900px){
@@ -45,6 +64,7 @@
             grid-template-areas: 
             "image"
             "text"
+            "more"
             ;
     
             .text{
@@ -60,11 +80,13 @@
 .odd{
     grid-template-columns: 1fr 0.6fr;
     grid-template-areas: 
-    "text image";
+    "text image"
+    "more more";
 }
 
 .even{
     grid-template-columns: 0.6fr 1fr;
     grid-template-areas: 
-    "image text";
+    "image text"
+    "more more";
 }
