@@ -15,7 +15,7 @@ interface Props {
 export const Layout = ({title, image, ogTitle = defaultOgTitle, description = defaultDescription, keywords = defaultKeywords }: Props) => 
 (        
     <Head>
-        <title>{title ? `Casa Bella | ${title}` : "Casa Bella"}</title>
+        <title>{title ? `Casa Bella London | ${title}` : "Casa Bella London"}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
