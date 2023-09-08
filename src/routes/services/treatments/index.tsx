@@ -41,8 +41,8 @@ const Treatment = ({services}: {services: IServices[]}) => {
           </div>
 
           <div className={styles.image}>
-              <div/>
-              <img src={el.image} alt="treatments"/>
+            <div/>
+            <img src={el.image} alt="treatments"/>
           </div>
           
           {more.includes(el._id) && 
