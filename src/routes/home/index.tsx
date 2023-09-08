@@ -20,11 +20,11 @@ const Index = (props: PropsTypes) => {
       <Video />
 
       <Observer>
-        <Subservices subservices={props.subservices}/>
+        <Services services={props.services}/>
       </Observer>
 
       <Observer>
-        <Services services={props.services}/>
+        <Subservices subservices={props.subservices}/>
       </Observer>
 
       <Observer>
