@@ -35,8 +35,8 @@ const Treatment = ({services}: {services: IServices[]}) => {
               {el.text_5 && <p className={styles.p5}> {el.text_5} </p>}
 
               <div className={styles.actions}>
-                <Link href="https://booking.casabellalondon.co.uk" value="book now" style={{width: "200px"}} rel="noopener noreferrer" target="_blank" />
-                {el.more && <Button value="more" onClick={() => onMore(el._id)} open={more.includes(el._id)} color="light" /> }
+                <Link href="https://booking.casabellalondon.co.uk" value="Book Now" style={{width: "200px"}} rel="noopener noreferrer" target="_blank" />
+                {el.more && <Button value="More info" onClick={() => onMore(el._id)} open={more.includes(el._id)} color="light" /> }
               </div>
           </div>
 
