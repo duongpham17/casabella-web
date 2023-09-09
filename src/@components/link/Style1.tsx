@@ -17,7 +17,6 @@ const Style1 = ({value, color="main", padding, margin, center, href, open}: Prop
         <Link className={`${styles[color]}`} style={{padding: padding, margin: margin}} href={href} rel={open ? "noopener noreferrer" : ""} target={open ? "_blank" : ""}>
             {value}
         </Link>
-        
     </div>
 )
 

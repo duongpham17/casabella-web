@@ -1,6 +1,27 @@
 .container{
     max-width: 1200px;
     margin: auto;
+
+    .viewImage{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(6, 6, 6, 0.833);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        cursor: pointer;
+        img{
+            cursor: default;
+            width: 100%;
+            max-width: 1000px;
+            max-height: 1000px;
+            object-fit: contain;
+        }
+    }
    
     .element{
         margin: 0 auto;
@@ -29,11 +50,22 @@
 
             .actions{
                 display: flex;
+                gap: 1rem;
                 align-items: center;
 
                 button{
-                    margin-left: 1rem;
                     padding: 1rem;
+                }
+            }
+
+            @media (max-width: 900px){
+                .actions{
+                    display: block;
+
+                    button, a{
+                        width: 100%;
+                        margin: 1rem 0;
+                    }
                 }
             }
     
@@ -53,30 +85,26 @@
             padding: 2.5rem;
             padding-top: 1rem;
 
-            h1, h2{
-                border-bottom: 1px solid black;
+            h1,h2{
+                border-bottom: 1px solid black
             }
-
-            b, h1, h2, h3, h4, p {
+            h1, h2, p{
                 display: block;
-                margin-bottom: 0.5rem;
                 font-weight: 200;
+                margin-bottom: 1rem;
             }
-
-            p{
-                color: var(--clr-grey);
-                font-size: 0.8rem;
-            }
-
             video{
                 width: 100% !important;
                 margin: 1rem 0;
             }
-
             img{
-                display: inline;
-                width: 49%;
-                height: 300px;
+                display: inline-block;
+                width: 100%;
+                margin: 0.5rem;
+                max-height: 400px;
+                min-height: 300px;
+                object-fit: contain;
+                cursor: zoom-in;
             }
         }
     

@@ -2,6 +2,11 @@
     button{
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        border: 1px solid transparent;
+    }
+    .selected{
+        border: 1px solid var(--clr-main);
     }
     .open{
         rotate: 90deg;

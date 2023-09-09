@@ -13,7 +13,7 @@ interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement>  {
 
 const Style3 = ({value, color="main", padding, margin, center, open, ...props}: Props) => (
     <div className={`${styles.container} ${center ? styles.center : ""}`}>
-        <button className={`${styles[color]}`} style={{padding: padding, margin: margin}} {...props}>
+        <button className={`${styles[color]} ${open ? styles.selected:""}`} style={{padding: padding, margin: margin}} {...props}>
             <span>{value}</span>
             <MdKeyboardArrowRight className={open ? styles.open : styles.close}/>
         </button>
