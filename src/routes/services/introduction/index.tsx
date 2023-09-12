@@ -6,7 +6,7 @@ const Introduction = () => {
   return (
     <div className={styles.container}>
       <section>
-        <Header value="Discover our services" size="clamp(3vw, 4vw, 5vw)" center/>
+        <Header value="Discover our services" size="clamp(3vw, 4vw, 5vw)" center color="white"/>
       </section>
     </div>
   )
