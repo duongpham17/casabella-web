@@ -9,9 +9,7 @@ const Introduction = () => {
   return (
     <div className={styles.container}>
       <div>
-        <Header value="Where Beauty and Elegance meet" size='clamp(4vw, 4vw, 5vw)' center/>
-
-        <Text value="Step into a realm of indulgence where we celebrate and enhance your distinct radiance." center/>
+        <Header value="Where Beauty and Elegance meet" size='clamp(4vw, 4vw, 5vw)' center color="white"/>
 
         <Link value="book now" href={`https://booking.casabellalondon.co.uk`} open padding='1rem 2rem'/>
       </div>
