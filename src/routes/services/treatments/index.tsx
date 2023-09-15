@@ -77,8 +77,12 @@ const Treatment = ({services}: {services: IServices[]}) => {
                             <source src={tag.replaceAll("<video>", " ").replaceAll("</video>", " ")} type="video/mp4" />
                         </video>
                     :  tag.includes("<img>") ?
-                        <img onClick={() => setViewImage(tag.replaceAll("<img>", " ").replaceAll("</img>", " "))} 
-                        key={index} src={tag.replaceAll("<img>", " ").replaceAll("</img>", " ")} alt="item" />
+                        <img
+                          key={index}
+                          src={tag.replaceAll("<img>", " ").replaceAll("</img>", " ")} 
+                          alt="item"
+                          onClick={() => setViewImage(tag.replaceAll("<img>", " ").replaceAll("</img>", " "))} 
+                        />
                     : ""
                 )}
             </div>

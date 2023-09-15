@@ -31,7 +31,7 @@
     
         .text{
             grid-area: text;
-            padding: 2.5rem;
+            padding: 2rem;
     
             p, h1{
                 font-weight: 200;
@@ -84,6 +84,7 @@
             grid-area: more;
             padding: 2.5rem;
             padding-top: 1rem;
+            border: 1px solid red;
 
             h1,h2{
                 border-bottom: 1px solid black
@@ -100,11 +101,15 @@
             img{
                 display: inline-block;
                 width: 100%;
-                margin: 0.5rem;
+                outline: 2px solid white;
                 max-height: 400px;
                 min-height: 300px;
                 object-fit: contain;
-                cursor: zoom-in;
+                cursor: pointer;
+
+                &:hover{
+                    opacity: 0.8;
+                }
             }
         }
     
