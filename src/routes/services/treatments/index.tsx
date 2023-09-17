@@ -59,6 +59,8 @@ const Treatment = ({services}: {services: IServices[]}) => {
               {el.more.split("\n").map((tag, index) => 
                     tag.includes("<p>") ? 
                         <p key={index}>{tag.replaceAll("<p>", " ").replaceAll("</p>", " ")}</p>
+                    : tag.includes("<b>") ? 
+                          <b key={index}>{tag.replaceAll("<b>", " ").replaceAll("</b>", " ")}</b>
                     : tag.includes("<h1>") ?
                         <h1 key={index}>{tag.replaceAll("<h1>", " ").replaceAll("</h1>", " ")}</h1>
                     : tag.includes("<h2>") ? 
