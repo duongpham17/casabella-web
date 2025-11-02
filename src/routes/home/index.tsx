@@ -1,17 +1,13 @@
 import styles from './Home.module.scss';
 import React from 'react';
-
 import Introduction from './introduction';
 import Video from './video';
 import Subservices from './subservices';
 import Services from './services';
 import Contact from './contact';
-
 import Observer from '@components/observer/Observer';
 
-import { PropsTypes } from 'pages';
-
-const Index = (props: PropsTypes) => {
+const Index = () => {
   return (
     <div className={styles.container}>
 
@@ -20,11 +16,11 @@ const Index = (props: PropsTypes) => {
       <Video />
 
       <Observer>
-        <Services services={props.services}/>
+        <Services/>
       </Observer>
 
       <Observer>
-        <Subservices subservices={props.subservices}/>
+        <Subservices/>
       </Observer>
 
       <Observer>
