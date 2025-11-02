@@ -1,12 +1,9 @@
 import styles from './Services.module.scss';
 import React from 'react';
-
 import Introduction from './introduction';
 import Treatments from './treatments';
 
-import {PropsTypes} from 'pages/services'; 
-
-const Services = (props: PropsTypes) => {
+const Services = () => {
 
   return (
     <div className={styles.container}>
@@ -14,7 +11,7 @@ const Services = (props: PropsTypes) => {
 
       <div className={styles.wrapper}>
 
-        <Treatments services={props.services} />  
+        <Treatments />  
 
       </div>
 

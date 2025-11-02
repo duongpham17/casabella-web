@@ -1,14 +1,14 @@
 import styles from './Subservices.module.scss';
 import React from 'react';
-
-import {IServices} from 'types/services';
-
+import {data} from '@data/treatments';
 import useWindow from '@hooks/useWindow';
 import Swiper from '@components/swiper';
 
-const SubservicesContainer = ({subservices}: {subservices: IServices[]}) => {
+const SubservicesContainer = () => {
 
     const {width} = useWindow();
+
+    const subservices = data.filter(el => el.type === "subservices");
 
     return (
         <div className={styles.container}>
@@ -22,7 +22,7 @@ const SubservicesContainer = ({subservices}: {subservices: IServices[]}) => {
                 {width >= 900 
                     ? 
                         subservices.map((el, index) => 
-                            <div className={styles.element} key={el._id}>
+                            <div className={styles.element} key={el.id}>
                                 <div className={styles.image}>
                                     <img src={el.image} alt="skin care" width={300} height={400} />
                                     <p className={styles.id}>{index+1}</p>
@@ -36,7 +36,7 @@ const SubservicesContainer = ({subservices}: {subservices: IServices[]}) => {
                     : 
                         <Swiper data={subservices} slidersPerView={width >= 600 ? 2 : 1} arrows>
                             {(el, index) => 
-                                <div className={styles.element} key={el._id}>
+                                <div className={styles.element} key={el.id}>
                                     <div className={styles.image}>
                                         <img src={el.image} alt="skin care" width={300} height={400} />
                                         <p className={styles.id}>{index+1}</p>

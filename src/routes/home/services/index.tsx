@@ -1,11 +1,12 @@
 import styles from './Services.module.scss';
 import React from 'react';
-
-import {IServices} from 'types/services';
-
 import Link from 'next/link';
+import {data} from '@data/treatments';
 
-const SservicesContainer = ({services}: {services: IServices[]}) => {
+const SservicesContainer = () => {
+
+    const services = data.filter(el => el.type === "services");
+
     return (
         <div className={styles.container}>
 
@@ -14,7 +15,7 @@ const SservicesContainer = ({services}: {services: IServices[]}) => {
             </div>
 
             {services.map((el) => 
-                <Link href={`/services/#${el.text_2}`} key={el._id} className={styles.element}>
+                <Link href={`/services/#${el.text_2}`} key={el.id} className={styles.element}>
                     <img src={el.image} alt="treatments"/>
                     <span>{el.text_2}</span>
                 </Link>

@@ -1,11 +1,13 @@
 import styles from './Treatment.module.scss';
 import React, {useState} from 'react';
-import {IServices} from 'types/services';
+import {data} from '@data/treatments';
 import Observer from '@components/observer/Observer';
 import Link from '@components/link/Style2';
 import Button from '@components/buttons/Style3';
 
-const Treatment = ({services}: {services: IServices[]}) => {
+const Treatment = () => {
+
+  const services = data
 
   const [more, setMore] = useState<string[]>([]);
 
@@ -29,7 +31,7 @@ const Treatment = ({services}: {services: IServices[]}) => {
     }
 
     {services.map((el, index) => 
-      <Observer key={el._id}>
+      <Observer key={el.id.toString()}>
         <div className={`${styles.element} ${index % 2 !== 0 ? styles.even : styles.odd}`} id={el.text_2}>
           <div className={styles.text}>
               {el.text_1 && <p className={styles.p1}>{el.text_1}</p>}
@@ -44,7 +46,7 @@ const Treatment = ({services}: {services: IServices[]}) => {
 
               <div className={styles.actions}>
                 <Link href="https://booking.casabellalondon.co.uk" value="Book Now" style={{width: "200px"}} rel="noopener noreferrer" target="_blank" />
-                {el.more && <Button value="More info" onClick={() => onMore(el._id)} open={more.includes(el._id)} color="light" /> }
+                {el.more && <Button value="More info" onClick={() => onMore(el.id.toString())} open={more.includes(el.id.toString())} color="light" /> }
               </div>
 
           </div>
@@ -54,7 +56,7 @@ const Treatment = ({services}: {services: IServices[]}) => {
             <img src={el.image} alt="treatments"/>
           </div>
           
-          {more.includes(el._id) && 
+          {more.includes(el.id.toString()) && 
             <div className={styles.more}>
               {el.more.split("\n").map((tag, index) => 
                     tag.includes("<p>") ? 
