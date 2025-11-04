@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import {AiOutlineInstagram} from 'react-icons/ai';
 import {links} from '../data';
-import useOpen from '../../../hooks/useOpen';
+import useOpen from '_structure/hooks/useOpen';
 
 const Large = () => {
 

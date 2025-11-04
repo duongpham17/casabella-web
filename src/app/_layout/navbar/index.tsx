@@ -1,7 +1,7 @@
 "use client";
 
 import styles from './Navbar.module.scss';
-import useWindowSize from '../../hooks/useWindow';
+import useWindowSize from '_structure/hooks/useWindow';
 
 import Small from './small';
 import Large from './large';

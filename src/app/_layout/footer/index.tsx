@@ -1,16 +1,16 @@
 import styles from './Footer.module.scss'
-import Observer from '../../components/observer/Observer';
-import Header from '../../components/headers/Style1';
-import Text from '../../components/text/Style1';
+import Observer from '_structure/components/observer/Observer';
+import Header from '_structure/components/headers/Style1';
+import Text from '_structure/components/text/Style1';
 import Link from 'next/link';
 
 const Footer = () => {
   return (
     <Observer>
+    <footer className={styles.container}>
+        <div className={styles.line} />
 
-        <div className={styles.line} ></div>
-
-        <footer className={styles.container}>
+        <section className={styles.time}>
             <div>
                 <Header value="Location" size='1rem' center margin='1rem'/>
                 <Text value="209 Haverstock Hill" center />
@@ -28,12 +28,21 @@ const Footer = () => {
                 <Text value={<a href="mailto:hello@casabellalondon.co.uk">hello@casabellalondon.co.uk</a>} center />
                 <Text value={<a href="tel:02086167977">020 8616 7977</a>} center/>
             </div>
-        </footer>
+        </section>
 
-        <div className={styles.line} ></div>
-        <div className={styles.container}>
+        <div className={styles.line} />
+
+        <section className={styles.links}>
             <Link href="/terms">Terms & Conditions</Link>
-        </div>
+        </section>
+
+        <div className={styles.line} />
+
+        <section className={styles.copyright}>
+            <small>@ 2025 casabellalondon.co.uk. All rights reserved</small>
+        </section>
+
+    </footer>
     </Observer>
   )
 }

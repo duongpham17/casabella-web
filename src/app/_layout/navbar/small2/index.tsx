@@ -3,9 +3,9 @@ import { useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Squeeze as Hamburger } from 'hamburger-react';
-import useOpen from '../../../hooks/useOpen';
+import useOpen from '_structure/hooks/useOpen';
 import { links } from '../data';
-import Observer from '../../../components/observer/Observer';
+import Observer from '_structure/components/observer/Observer';
 import {AiOutlineInstagram} from 'react-icons/ai';
 
 const Small = () => {
