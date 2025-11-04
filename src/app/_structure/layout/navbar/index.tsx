@@ -1,0 +1,27 @@
+"use client";
+
+import styles from './Navbar.module.scss';
+import useWindowSize from '../../hooks/useWindow';
+
+import Small from './small';
+import Large from './large';
+
+const Index = () => {
+
+    const {width} = useWindowSize();
+    
+    return (
+        <div className={styles.container}>
+
+            { width >= 900  
+                ?
+                    <Large />
+                :
+                    <Small />
+            }
+            
+        </div>
+    )
+}
+
+export default Index
